@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		5C4469C81DAF9010008FCAA5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469C71DAF9010008FCAA5 /* main.m */; };
 		5C4469CB1DAF9010008FCAA5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469CA1DAF9010008FCAA5 /* AppDelegate.m */; };
-		5C4469CE1DAF9010008FCAA5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469CD1DAF9010008FCAA5 /* ViewController.m */; };
 		5C4469D11DAF9010008FCAA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4469CF1DAF9010008FCAA5 /* Main.storyboard */; };
 		5C4469D31DAF9010008FCAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4469D21DAF9010008FCAA5 /* Assets.xcassets */; };
 		5C4469D61DAF9010008FCAA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4469D41DAF9010008FCAA5 /* LaunchScreen.storyboard */; };
 		5C4469E11DAF9010008FCAA5 /* GoEuroChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469E01DAF9010008FCAA5 /* GoEuroChallengeTests.m */; };
+		5C4469ED1DAF9D92008FCAA5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4469EC1DAF9D92008FCAA5 /* AFNetworking.framework */; };
+		5C4469F11DAF9DFF008FCAA5 /* TravelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469F01DAF9DFF008FCAA5 /* TravelListViewController.m */; };
+		5C4469F41DAF9E33008FCAA5 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469F31DAF9E33008FCAA5 /* ContainerViewController.m */; };
+		5C4469F81DAFA10F008FCAA5 /* GEHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469F71DAFA10F008FCAA5 /* GEHTTPClient.m */; };
+		5C4469FC1DAFC211008FCAA5 /* GEConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469FB1DAFC211008FCAA5 /* GEConnection.m */; };
+		5C446A001DAFC865008FCAA5 /* NSDictionary+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469FF1DAFC865008FCAA5 /* NSDictionary+Validation.m */; };
+		5C446A041DAFCD8A008FCAA5 /* EGDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C446A031DAFCD8A008FCAA5 /* EGDateFormatter.m */; };
+		5C446A071DB03BBC008FCAA5 /* GEConnectionDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C446A061DB03BBC008FCAA5 /* GEConnectionDataProvider.m */; };
+		5C446A0A1DB03EEF008FCAA5 /* GEConnectionJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C446A091DB03EEF008FCAA5 /* GEConnectionJSONParser.m */; };
+		5C446A0E1DB0409C008FCAA5 /* GEError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C446A0D1DB0409C008FCAA5 /* GEError.m */; };
+		5CFE06411DB0E12600C5E513 /* GEConnectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE06401DB0E12600C5E513 /* GEConnectionTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +41,6 @@
 		5C4469C71DAF9010008FCAA5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5C4469C91DAF9010008FCAA5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5C4469CA1DAF9010008FCAA5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5C4469CC1DAF9010008FCAA5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5C4469CD1DAF9010008FCAA5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5C4469D01DAF9010008FCAA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C4469D21DAF9010008FCAA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4469D51DAF9010008FCAA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +48,27 @@
 		5C4469DC1DAF9010008FCAA5 /* GoEuroChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoEuroChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C4469E01DAF9010008FCAA5 /* GoEuroChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoEuroChallengeTests.m; sourceTree = "<group>"; };
 		5C4469E21DAF9010008FCAA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C4469EC1DAF9D92008FCAA5 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		5C4469EF1DAF9DFF008FCAA5 /* TravelListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TravelListViewController.h; path = ViewController/TravelListViewController.h; sourceTree = "<group>"; };
+		5C4469F01DAF9DFF008FCAA5 /* TravelListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TravelListViewController.m; path = ViewController/TravelListViewController.m; sourceTree = "<group>"; };
+		5C4469F21DAF9E33008FCAA5 /* ContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ContainerViewController.h; path = ViewController/ContainerViewController.h; sourceTree = "<group>"; };
+		5C4469F31DAF9E33008FCAA5 /* ContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ContainerViewController.m; path = ViewController/ContainerViewController.m; sourceTree = "<group>"; };
+		5C4469F61DAFA10F008FCAA5 /* GEHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEHTTPClient.h; path = DataProvider/GEHTTPClient.h; sourceTree = "<group>"; };
+		5C4469F71DAFA10F008FCAA5 /* GEHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEHTTPClient.m; path = DataProvider/GEHTTPClient.m; sourceTree = "<group>"; };
+		5C4469FA1DAFC211008FCAA5 /* GEConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GEConnection.h; sourceTree = "<group>"; };
+		5C4469FB1DAFC211008FCAA5 /* GEConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GEConnection.m; sourceTree = "<group>"; };
+		5C4469FE1DAFC865008FCAA5 /* NSDictionary+Validation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+Validation.h"; path = "Categories/NSDictionary+Validation.h"; sourceTree = "<group>"; };
+		5C4469FF1DAFC865008FCAA5 /* NSDictionary+Validation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+Validation.m"; path = "Categories/NSDictionary+Validation.m"; sourceTree = "<group>"; };
+		5C446A021DAFCD8A008FCAA5 /* EGDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EGDateFormatter.h; path = Helper/EGDateFormatter.h; sourceTree = "<group>"; };
+		5C446A031DAFCD8A008FCAA5 /* EGDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EGDateFormatter.m; path = Helper/EGDateFormatter.m; sourceTree = "<group>"; };
+		5C446A051DB03BBC008FCAA5 /* GEConnectionDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEConnectionDataProvider.h; path = DataProvider/GEConnectionDataProvider.h; sourceTree = "<group>"; };
+		5C446A061DB03BBC008FCAA5 /* GEConnectionDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEConnectionDataProvider.m; path = DataProvider/GEConnectionDataProvider.m; sourceTree = "<group>"; };
+		5C446A081DB03EEF008FCAA5 /* GEConnectionJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEConnectionJSONParser.h; path = DataProvider/GEConnectionJSONParser.h; sourceTree = "<group>"; };
+		5C446A091DB03EEF008FCAA5 /* GEConnectionJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEConnectionJSONParser.m; path = DataProvider/GEConnectionJSONParser.m; sourceTree = "<group>"; };
+		5C446A0C1DB0409C008FCAA5 /* GEError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEError.h; path = Common/GEError.h; sourceTree = "<group>"; };
+		5C446A0D1DB0409C008FCAA5 /* GEError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEError.m; path = Common/GEError.m; sourceTree = "<group>"; };
+		5CFE063F1DB0E12600C5E513 /* GEConnectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GEConnectionTableViewCell.h; path = View/GEConnectionTableViewCell.h; sourceTree = "<group>"; };
+		5CFE06401DB0E12600C5E513 /* GEConnectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GEConnectionTableViewCell.m; path = View/GEConnectionTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C4469ED1DAF9D92008FCAA5 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +93,7 @@
 		5C4469BA1DAF900F008FCAA5 = {
 			isa = PBXGroup;
 			children = (
+				5C4469EB1DAF9D7B008FCAA5 /* Frameworks */,
 				5C4469C51DAF9010008FCAA5 /* GoEuroChallenge */,
 				5C4469DF1DAF9010008FCAA5 /* GoEuroChallengeTests */,
 				5C4469C41DAF9010008FCAA5 /* Products */,
@@ -81,10 +112,15 @@
 		5C4469C51DAF9010008FCAA5 /* GoEuroChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				5CFE06421DB0E22600C5E513 /* View */,
+				5C446A0B1DB0407A008FCAA5 /* Common */,
+				5C446A011DAFCD43008FCAA5 /* Helper */,
+				5C4469FD1DAFC846008FCAA5 /* Categories */,
+				5C4469F91DAFC1FD008FCAA5 /* Model */,
+				5C4469F51DAFA0C3008FCAA5 /* DataProvider */,
+				5C4469EE1DAF9DE4008FCAA5 /* ViewController */,
 				5C4469C91DAF9010008FCAA5 /* AppDelegate.h */,
 				5C4469CA1DAF9010008FCAA5 /* AppDelegate.m */,
-				5C4469CC1DAF9010008FCAA5 /* ViewController.h */,
-				5C4469CD1DAF9010008FCAA5 /* ViewController.m */,
 				5C4469CF1DAF9010008FCAA5 /* Main.storyboard */,
 				5C4469D21DAF9010008FCAA5 /* Assets.xcassets */,
 				5C4469D41DAF9010008FCAA5 /* LaunchScreen.storyboard */,
@@ -109,6 +145,83 @@
 				5C4469E21DAF9010008FCAA5 /* Info.plist */,
 			);
 			path = GoEuroChallengeTests;
+			sourceTree = "<group>";
+		};
+		5C4469EB1DAF9D7B008FCAA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C4469EC1DAF9D92008FCAA5 /* AFNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C4469EE1DAF9DE4008FCAA5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5C4469EF1DAF9DFF008FCAA5 /* TravelListViewController.h */,
+				5C4469F01DAF9DFF008FCAA5 /* TravelListViewController.m */,
+				5C4469F21DAF9E33008FCAA5 /* ContainerViewController.h */,
+				5C4469F31DAF9E33008FCAA5 /* ContainerViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		5C4469F51DAFA0C3008FCAA5 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				5C4469F61DAFA10F008FCAA5 /* GEHTTPClient.h */,
+				5C4469F71DAFA10F008FCAA5 /* GEHTTPClient.m */,
+				5C446A051DB03BBC008FCAA5 /* GEConnectionDataProvider.h */,
+				5C446A061DB03BBC008FCAA5 /* GEConnectionDataProvider.m */,
+				5C446A081DB03EEF008FCAA5 /* GEConnectionJSONParser.h */,
+				5C446A091DB03EEF008FCAA5 /* GEConnectionJSONParser.m */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+		5C4469F91DAFC1FD008FCAA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5C4469FA1DAFC211008FCAA5 /* GEConnection.h */,
+				5C4469FB1DAFC211008FCAA5 /* GEConnection.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5C4469FD1DAFC846008FCAA5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5C4469FE1DAFC865008FCAA5 /* NSDictionary+Validation.h */,
+				5C4469FF1DAFC865008FCAA5 /* NSDictionary+Validation.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		5C446A011DAFCD43008FCAA5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5C446A021DAFCD8A008FCAA5 /* EGDateFormatter.h */,
+				5C446A031DAFCD8A008FCAA5 /* EGDateFormatter.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		5C446A0B1DB0407A008FCAA5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5C446A0C1DB0409C008FCAA5 /* GEError.h */,
+				5C446A0D1DB0409C008FCAA5 /* GEError.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		5CFE06421DB0E22600C5E513 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5CFE063F1DB0E12600C5E513 /* GEConnectionTableViewCell.h */,
+				5CFE06401DB0E12600C5E513 /* GEConnectionTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,9 +326,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4469CE1DAF9010008FCAA5 /* ViewController.m in Sources */,
 				5C4469CB1DAF9010008FCAA5 /* AppDelegate.m in Sources */,
+				5C4469F11DAF9DFF008FCAA5 /* TravelListViewController.m in Sources */,
+				5C446A071DB03BBC008FCAA5 /* GEConnectionDataProvider.m in Sources */,
+				5C446A041DAFCD8A008FCAA5 /* EGDateFormatter.m in Sources */,
+				5C4469F41DAF9E33008FCAA5 /* ContainerViewController.m in Sources */,
+				5CFE06411DB0E12600C5E513 /* GEConnectionTableViewCell.m in Sources */,
 				5C4469C81DAF9010008FCAA5 /* main.m in Sources */,
+				5C446A001DAFC865008FCAA5 /* NSDictionary+Validation.m in Sources */,
+				5C4469F81DAFA10F008FCAA5 /* GEHTTPClient.m in Sources */,
+				5C446A0A1DB03EEF008FCAA5 /* GEConnectionJSONParser.m in Sources */,
+				5C446A0E1DB0409C008FCAA5 /* GEError.m in Sources */,
+				5C4469FC1DAFC211008FCAA5 /* GEConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +473,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GoEuroChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mktom.GoEuroChallenge;
@@ -362,6 +488,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GoEuroChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mktom.GoEuroChallenge;
@@ -412,6 +542,7 @@
 				5C4469E71DAF9010008FCAA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C4469E81DAF9010008FCAA5 /* Build configuration list for PBXNativeTarget "GoEuroChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +551,7 @@
 				5C4469EA1DAF9010008FCAA5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
