@@ -12,16 +12,17 @@
 
 @interface TravelListViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingIndicator;
 
-@property (nonatomic, strong) GEConnectionDataProvider *dataProvider;
+@property (nonatomic) BOOL isLoading;
 @property (nonatomic, strong)NSArray *modelArray;
+
 @end
 
 @implementation TravelListViewController
 
-
-
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
   [self initialize];
@@ -36,17 +37,48 @@
 
 - (void)loadData
 {
+  self.isLoading = YES;
   __weak __typeof__(self) weakSelf = self;
   [self.dataProvider getConnectionsOnCompletion:^(NSArray<GEConnection *> *connectionArray, NSError *error) {
-    
+    weakSelf.isLoading = NO;
     if (error) {
       
     }
     else {
       weakSelf.modelArray = connectionArray;
-      [weakSelf.tableView reloadData];
+      NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:0];
+      [weakSelf.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
     }
   }];
+}
+
+- (void)setIsLoading:(BOOL)isLoading
+{
+  _isLoading = isLoading;
+  
+  self.tableView.alpha = isLoading ? 0.0f : 1.0f;
+  isLoading ? [self.loadingIndicator startAnimating] : [self.loadingIndicator stopAnimating];
+}
+
+- (void)presentAlert
+{
+  UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"Alert"
+                                      message:@"Not implemented yet."
+                               preferredStyle:UIAlertControllerStyleAlert];
+  
+  UIAlertAction* ok = [UIAlertAction
+                       actionWithTitle:@"OK"
+                       style:UIAlertActionStyleDefault
+                       handler:^(UIAlertAction * action)
+                       {
+                         [controller dismissViewControllerAnimated:YES completion:nil];
+                         
+                       }];
+  
+  [controller addAction:ok];
+  
+  [self presentViewController:controller animated:YES completion:nil];
+  
 }
 
 @end
@@ -67,6 +99,18 @@
   [cell updateWithConnection:connection];
   
   return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  [self presentAlert];
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  [UIView animateWithDuration:0.3 animations:^{
+    cell.contentView.alpha = 1.0f;
+  }];
 }
 
 @end

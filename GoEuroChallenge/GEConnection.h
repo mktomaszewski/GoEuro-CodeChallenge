@@ -26,6 +26,8 @@
 - (NSString *)timeString;
 - (NSString *)durationTimeString;
 - (NSString *)priceString;
+- (NSString *)imageUrlString;
+- (NSString *)numberOfStopsString;
 
 
 @end

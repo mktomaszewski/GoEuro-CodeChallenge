@@ -11,6 +11,8 @@
 
 @interface TravelListViewController : UIViewController
 
+@property (nonatomic, strong) GEConnectionDataProvider *dataProvider;
+
 @end
 
 @interface TravelListViewController(TableView) <UITableViewDataSource, UITableViewDelegate>

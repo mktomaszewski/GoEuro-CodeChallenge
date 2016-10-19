@@ -35,6 +35,30 @@
   }
   return self;
 }
+
+- (NSString *)imageUrlString
+{
+  return [_imageUrlString stringByReplacingOccurrencesOfString:@"{size}" withString:@"63"];
+}
+
+- (NSString *)numberOfStopsString
+{
+  NSString *numberOfStopsString;
+  
+  switch (self.numberOfStops) {
+    case 0:
+      numberOfStopsString = @"Direct";
+      break;
+    case 1:
+      numberOfStopsString = @"1 Change";
+      break;
+    default:
+      numberOfStopsString = [NSString stringWithFormat:@"%ld Changes",self.numberOfStops];
+      break;
+  }
+  return numberOfStopsString;
+}
+
 - (NSString *)priceString
 {
   return [NSString stringWithFormat:@"%.2f€",self.price];
@@ -75,10 +99,10 @@
   return [NSString stringWithFormat:@"%ld:%ldh",hours, minutes];
   
 }
-//TODO: Check for midnight to midnight case
+
 - (BOOL)arrivalIsNextDay
 {
-  return [self.arrivalDate compare:self.departureDate] == (NSOrderedDescending | NSOrderedSame);
+  return [self.departureDate compare:self.arrivalDate] != NSOrderedAscending;
 }
 
 

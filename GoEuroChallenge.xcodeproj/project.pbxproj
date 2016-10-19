@@ -13,7 +13,6 @@
 		5C4469D31DAF9010008FCAA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4469D21DAF9010008FCAA5 /* Assets.xcassets */; };
 		5C4469D61DAF9010008FCAA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C4469D41DAF9010008FCAA5 /* LaunchScreen.storyboard */; };
 		5C4469E11DAF9010008FCAA5 /* GoEuroChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469E01DAF9010008FCAA5 /* GoEuroChallengeTests.m */; };
-		5C4469ED1DAF9D92008FCAA5 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4469EC1DAF9D92008FCAA5 /* AFNetworking.framework */; };
 		5C4469F11DAF9DFF008FCAA5 /* TravelListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469F01DAF9DFF008FCAA5 /* TravelListViewController.m */; };
 		5C4469F41DAF9E33008FCAA5 /* ContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469F31DAF9E33008FCAA5 /* ContainerViewController.m */; };
 		5C4469F81DAFA10F008FCAA5 /* GEHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4469F71DAFA10F008FCAA5 /* GEHTTPClient.m */; };
@@ -24,6 +23,8 @@
 		5C446A0A1DB03EEF008FCAA5 /* GEConnectionJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C446A091DB03EEF008FCAA5 /* GEConnectionJSONParser.m */; };
 		5C446A0E1DB0409C008FCAA5 /* GEError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C446A0D1DB0409C008FCAA5 /* GEError.m */; };
 		5CFE06411DB0E12600C5E513 /* GEConnectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFE06401DB0E12600C5E513 /* GEConnectionTableViewCell.m */; };
+		5CFE06461DB0EFDB00C5E513 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4469EC1DAF9D92008FCAA5 /* AFNetworking.framework */; };
+		5CFE06471DB0EFDB00C5E513 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4469EC1DAF9D92008FCAA5 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,20 @@
 			remoteInfo = GoEuroChallenge;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CFE06481DB0EFDB00C5E513 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5CFE06471DB0EFDB00C5E513 /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5C4469C31DAF9010008FCAA5 /* GoEuroChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoEuroChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C4469ED1DAF9D92008FCAA5 /* AFNetworking.framework in Frameworks */,
+				5CFE06461DB0EFDB00C5E513 /* AFNetworking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +249,7 @@
 				5C4469BF1DAF900F008FCAA5 /* Sources */,
 				5C4469C01DAF900F008FCAA5 /* Frameworks */,
 				5C4469C11DAF900F008FCAA5 /* Resources */,
+				5CFE06481DB0EFDB00C5E513 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

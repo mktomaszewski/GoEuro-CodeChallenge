@@ -12,4 +12,5 @@
 
 
 - (void)updateWithConnection:(GEConnection *)connection;
+
 @end
